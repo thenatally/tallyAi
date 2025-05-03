@@ -1,0 +1,25 @@
+{
+  "name": "tallyai",
+  "version": "1.0.0",
+  "description": "tally ai silly goob",
+  "homepage": "https://github.com/thenatally/tallyAi#readme",
+  "bugs": {
+    "url": "https://github.com/thenatally/tallyAi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenatally/tallyAi.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "trans.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file .env ."
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "typescript": "^5.8.3"
+  }
+}
