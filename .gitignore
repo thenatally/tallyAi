@@ -1,4 +1,4 @@
+processing/.env
 /node_modules
 .env
-messages.json
-finetune_data.jsonl
+/dist

@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { json as raw } from "./json.js";
 const json = raw.slice(0, 1000)
 import {
@@ -8,7 +9,6 @@ import {
   Routes,
 } from "discord.js";
 import fs from "fs";
-
 const TOKEN = process.env.BOT;
 const CHANNEL_ID = "1141222490597757025"; 
 
@@ -42,7 +42,7 @@ client.once("ready", async () => {
   
   for (const msg of json
     .sort(
-      (a, b) =>
+      (a: { Timestamp: string | number | Date; }, b: { Timestamp: string | number | Date; }) =>
         new Date(b.Timestamp).getTime() - new Date(a.Timestamp).getTime()
     )
   ) {
